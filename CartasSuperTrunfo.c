@@ -1,68 +1,47 @@
 #include <stdio.h>
 
-int main(){
-      
-       // Declaração de variáveis para as cartas
-    char estado1, estado2;
-    char codigoCarta1[5], codigoCarta2[5];
-    char nomeCidade1[50] = "londrina", nomeCidade2[50];
-    int populacao1, populacao2;
-    float area1, area2, pib1, pib2;
-    int pontosTuristicos1, pontosTuristicos2;
+int main() {
+    // Declaração de variáveis para a carta 1
+     
+    char estado1[50] ="Parana";
+    char codigoCarta1[50] = "A01" ;
+    char nomeCidade1[50] = "londrina" ;
+    int populacao1 = 555655;
+    float area1 = 143.124 ;
+    float pib1 = 2.000000;
+    int pontosTuristicos1 = 25;
 
-    // Leitura dos dados para a carta 1
-    printf("Digite o estado da carta 1 (A-H): ");
-    scanf(" %c", &estado1);
-    printf("Digite o código da carta 1 (XX3YY): ");
-    scanf(" %s", codigoCarta1);
-    printf("Digite o nome da cidade da carta 1: ");
-    scanf(" %49s", nomeCidade1);
-    printf("Digite a população da cidade da carta 1: ");
-    scanf(" %d", &populacao1);
-    printf("Digite a área da cidade da carta 1 (em km²): ");
-    scanf(" %f", &area1);
-    printf("Digite o PIB da cidade da carta 1 (em bilhões de reais): ");
-    scanf(" %f", &pib1);
-    printf("Digite o número de pontos turísticos da cidade da carta 1: ");
-    scanf(" %d", &pontosTuristicos1);
+      //Dados da carta 1
+     printf("Carta 1 \n"); //apenas para indicar qual a carta
+     printf("O estado é: %s\n" ,estado1);  //%s imp. uma cadeia de caracteres
+     printf("O código da carta é: %s\n", codigoCarta1); 
+     printf("O nome da cidade é %s\n", nomeCidade1);
+     printf("A sua população é de: %d\n", populacao1); //%d imp. um numero inteiro, mas n suporta casas decimais
+     printf("Sua area em KM² é de: %.3f\n", area1); //%%3.f especifica as casas decimais 
+     printf("Seu Pib é de: %.6f\n", pib1); 
+     printf("A quantidade de pontos turisticos é de: %d\n", pontosTuristicos1); // imp. valores inteiros nas variaveis INT
+   
+     printf("\n");
 
-    // Leitura dos dados para a carta 2
-    printf("Digite o estado da carta 2 (A-H): ");
-    scanf(" %c", &estado2);
-    printf("Digite o código da carta 2 (XXYY): ");
-    scanf(" %s", codigoCarta2);
-    printf("Digite o nome da cidade da carta 2: ");
-    scanf(" %49s", nomeCidade2);
-    printf("Digite a população da cidade da carta 2: ");
-    scanf(" %d", &populacao2);
-    printf("Digite a área da cidade da carta 2 (em km²): ");
-    scanf(" %f", &area2);
-    printf("Digite o PIB da cidade da carta 2 (em bilhões de reais): ");
-    scanf(" %f", &pib2);
-    printf("Digite o número de pontos turísticos da cidade da carta 2: ");
-    scanf(" %d", &pontosTuristicos2);
+     // Declaração de variáveis para a carta 2
+    char estado2[50] ="Sergipe";
+    char codigoCarta2[50] = "B01" ;
+    char nomeCidade2[50] = "Aracaju" ;
+    int populacao2 = 2300000;
+    float area2 = 181.8 ;
+    float pib2 = 9.7779;
+    int pontosTuristicos2 =5;
 
-    // Exibição dos dados das cartas
-    printf("\nCarta 1:\n");
-    printf("Estado: %c\n", estado1);
-    printf("Código: %s\n", codigoCarta1);
-    printf("Nome da cidade: %s\n", nomeCidade1);
-    printf("População: %d\n", populacao1);
-    printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de pontos turísticos: %d\n", pontosTuristicos1);
-
-    printf("\nCarta 2:\n");
-    printf("Estado: %c\n", estado2);
-    printf("Código: %s\n", codigoCarta2);
-    printf("Nome da cidade: %s\n", nomeCidade2);
-    printf("População: %d\n", populacao2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Número de pontos turísticos: %d\n", pontosTuristicos2);
-
-
-
+      //Dados da carta 2
+      printf("Carta 2 \n"); //apenas para indicar qual a carta
+      printf("O estado é: %s\n" ,estado2);  //%s imp. uma cadeia de caracteres
+      printf("O código da carta é: %s\n", codigoCarta2); 
+      printf("O nome da cidade é %s\n", nomeCidade2);
+      printf("A sua população é de: %d\n", populacao2); //%d imp. um numero inteiro, mas n suporta casas decimais
+      printf("Sua area em KM² é de: %.3f\n", area2); //%%3.f especifica as casas decimais 
+      printf("Seu Pib é de: %.6f\n", pib2); 
+      printf("A quantidade de pontos turisticos é de: %d\n", pontosTuristicos2); // imp. valores inteiros nas variaveis INT
+    
 
     return 0;
 }
