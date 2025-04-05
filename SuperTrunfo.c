@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main() {
- 
+     
+      printf(" Nível Novato: Cadastro Básico \n\n");
+
     //variaveis da carta 1
      char estado1[50] ;
      char codigoCarta1[50] ;
@@ -10,8 +12,9 @@ int main() {
      float area1 ;
      float Pib1;
      int pontosTuristicos1 ;
-
-     printf("Digite seu estado: ");
+      
+     printf("Carta 1\n");
+     printf("Digite o estado: ");
      scanf(" %s",estado1);
   
      printf("Digite o codigo da carta A-H: ");
@@ -53,8 +56,8 @@ int main() {
      float Pib2;
      int pontosTuristicos2 ;
 
-
-     printf("\n Digite seu estado: ");
+     printf("\n Carta 2\n");
+     printf("Digite o estado: ");
      scanf(" %s" ,estado2);
   
      printf("Digite o codigo da carta A-H: ");
